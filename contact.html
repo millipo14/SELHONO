@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курсовая</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <img src="./img/head-1.png">SELHONO
+        <div class="menu">
+          <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./project.html">Project</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li class="active"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="header_cont">
+      <div class="header_cont">
+        <img src="./img_cont/cont title.png">
+      </div>
+        <div class="cont_title">
+            We love meeting new people<br> and helping them.
+        </div>
+    </div>
+    <div class="content_cont">
+        <img src="./img_cont/Sub Content.png" class="content_image">
+        <div class="form">
+            <form id="form" onsubmit="return full(event)">
+    
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="text" name="phone" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input id="email" type="mail" name="mail" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="sms">I'm interested in...</label>
+                    <textarea id="sms" name="sms" row="15" cols="25" required></textarea>
+                </div>
+                <button class="form-button" type="submit">Send now</button>
+            </form>
+        </div>
+    </div>
+    <div class="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ae42c571dc71b9d6b89e4980fd56e170559fbef74248637b56cf84b3d2d53ee&amp;width=899&amp;height=441&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="copyr">
+        Copyright © SELHONO <br>
+        author Polina Mitlyanskaya PRI22/1
+      </div>
+  </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

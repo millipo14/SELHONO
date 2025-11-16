@@ -1,0 +1,885 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+.none{
+    display: none !important; 
+}
+:root{
+    --container-width: 75%;
+    --secondary: rgba(157, 92, 147, 0.547);
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+/*HOME*/
+.container{
+    max-width: var(--container-width);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.header__top {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
+    color: #292F36;
+
+}
+.menu {
+    margin-left: 200px;
+}
+
+.menu li {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    margin: 20px;
+    display: inline-block;
+    font-size: 30px;
+}
+.menu li a{
+    color: #292F36;
+}
+.menu li.active a{
+    color: #C76904;
+}
+
+.header_content img{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+}
+.header_content_txt{
+    position: absolute;
+    color:rgb(255, 255, 255);
+    bottom: 50%;
+    font-weight: 400;
+    font-size: 65px;
+    margin-left: 1.5%;
+    font-family: "DM Serif Display", serif;
+    text-shadow: 1px 1px 2px black; 
+}
+.header_content_txt_small{
+    position: absolute;
+    color:rgb(255, 255, 255);
+    bottom: 37%;
+    font-weight: 500;
+    font-size: 22px;
+    margin-left: 1.5%;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1%;
+    text-shadow: 1px 1px 2px black; 
+}
+
+.header_content_button button{
+    position: absolute;
+    bottom: 20%;
+    background-color: #cda274;
+    border-radius: 18px;
+    width: 227.14px;
+    height: 75px;
+    margin-left: 25px;
+
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 2%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content_button button img{
+    display: block;
+    margin-left: 7%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+.info img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.footers img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 7%;
+}
+.jojo{
+    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-size: 40px;
+    margin-top: 3%;
+    color: #292F36;
+    text-align: left;
+    margin-top: -20%;
+    margin-left: 8%;
+}
+.jojo img{
+    max-width: 100%;
+    max-height: 100%; 
+    box-shadow: -2px 5px 5px 0px rgba(255, 255, 255, 0.627);
+}
+.jojo_txt{
+    font-family: "Jost", sans-serif;
+    color: #4D5053;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1%;
+    margin-left: 8%;
+    margin-top: 1%;
+}
+.footer_icon{
+    margin-left: 8%;
+    margin-top: 1%;
+}
+.copyr{
+    text-align: center;
+    margin-top: 10%;
+    color: #4D5053;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+/*PROJECT*/
+.header_proj {
+    position: relative; 
+}
+  
+.header_proj img {
+    width: 100%;
+}
+.head_proj_title {
+    position: absolute;
+    text-align: center;
+    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-size: 70px;
+    color: #ffffff;
+    top: 40%;  
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-shadow: 1px 1px 2px black; 
+}
+
+.menu_proj {
+    margin-left: 17.5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.menu_proj ul {
+    display: flex;
+    padding: 2%;
+    border-radius: 18px;
+    border: 7px solid #CDA274;
+    list-style: none;
+    max-width: 75%;
+}
+.menu_proj li {
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    flex: 1;
+    list-style: none;
+    margin: 0 10px;
+    position: relative;
+}
+.menu_proj li a {
+    color: #292F36;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+/* Новый стиль для фона при наведении */
+.menu_proj li::before {
+    content: "";
+    position: absolute;
+    top: -21%;
+    left: -15%;
+    right: -15%;
+    bottom: -21%;
+    background-color:#cda274c3;
+    border-radius: 18px;
+    z-index: -1; /* Фон должен быть под текстом */
+    opacity: 0; /* Скрыт по умолчанию */
+    transition: opacity 0.3s ease; /* Плавный переход */
+}
+.menu_proj li:hover::before {
+    opacity: 1; /* Показываем фон при наведении */
+}
+.menu_proj li:hover a { 
+    color: white;
+}
+
+/*SERVICES*/
+.header_serv{
+    position: relative;
+}
+.header_serv img{
+    width: 100%;
+}
+.head_serv_title{
+    position: absolute;
+    text-align: center;
+    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-size: 70px;
+    color: #ffffff;
+    top: 45%;  
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-shadow: 1px 1px 2px black; 
+}
+.serv_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+.serv_txt_1{
+    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
+    color: #363B41;
+    text-align: center;
+}
+.serv_txt_2{
+    font-family: "Jost", sans-serif;
+    color: #4D5053;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1%;
+    text-align: center;
+}
+
+.services_main{
+    display: flex;
+    margin-top: 7%;
+    /* margin-left: 10%; */
+}
+.serv_img{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+.services_texts{
+    flex: 1; /* Занимает 50% ширины */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+}
+.serv_title{
+    text-align: right;
+    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-size: 90px;
+    color: #C76904;
+    margin-right: 20%;
+}
+.serv_text_title{
+    text-align: left;
+    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-size: 35px;
+    color: #292F36;
+}
+.serv_text{
+    font-family: "Jost", sans-serif;
+    color: #4D5053;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1%;
+    text-align: left;
+    margin-top: 3%;
+}
+
+.services_main_1{
+    display: flex;
+    margin-top: 6%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+.serv_title_1{
+    text-align: left;
+    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-size: 90px;
+    color: #C76904;
+}
+
+
+/*CAROUSEL*/
+.owl-carousel .slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-caption {
+    text-align: center; 
+    padding: 1%;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+    color: #C76904;
+}
+  
+.portfolio_slider{
+    width: 95%;
+    margin: 0 auto;
+}
+.slider{
+    position: relative;
+}
+.slider::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: rgba(161, 161, 161, 0.566);
+    border-radius: 50px;
+}
+.slider_item{
+    width: 564px;
+    height: 480px;
+    margin-top: 1.5%; 
+    margin-top: 1.5%;
+    object-fit: cover;/*для управления тем, как изображение или видео будет вписываться в заданный контейнер.   */
+    border-radius: 35px;
+    transition: 0.2s ease-in;
+}
+.slider_btn{  
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50% ;
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(249, 185, 128, 0.789);
+}
+
+.btn_left{
+    left: -1%;
+}
+.btn_right{
+    right: -1%;
+}
+
+.title_slider{
+    text-align: center;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    font-size: 150px;
+    color: #cbb470;
+    text-shadow: 1px 1px 2px black; 
+}
+
+
+
+/*CONTACT*/
+.header_cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+.header_cont img{
+    width: 100%;
+}
+.cont_title {
+    font-weight: 400;
+    font-family: "DM Serif Display", serif;
+    font-size: 40px;
+    color: #292F36;
+    margin: 7%;
+} 
+
+.content_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_image {
+    flex: 1;
+    max-width: 20%;
+    max-height: 20%;
+    margin-right: 20%;
+}
+
+.form {
+    padding: 2%;
+    border-radius: 10px;
+    max-width: 50%;
+    border: 2px solid rgb(76, 76, 76);
+
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    color: #d5ad87;
+    font-weight: 500px;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+label {
+    display: flex;
+    margin-bottom: 2%;  
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="mail"],
+textarea,
+.form-button {
+    width: 100%;
+    border: 3px ridge #ccc;
+    border-radius: 4px;
+    margin-bottom: 1%;
+    height: 60px;
+    font-size: 20px;
+}
+
+.form-button {
+    font-family: "Jost", sans-serif;
+    color: #4D5053;
+    background-color: #d5ad87;
+    border: 1px solid black;
+    font-size: 30px;
+    cursor: pointer;
+    height: 60px;
+    margin-top: 2.5%;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.form_js{
+    background-color: #b88248;
+    color: #ccc;
+}
+
+
+
+/*медиа-запросы*/
+@media (max-width: 1300px) {
+    /*FOR HEADER*/
+    .header__top {
+        font-size: 35px;
+    }
+    .menu {
+        margin-left: 150px;
+    }
+    .menu li {
+        margin: 8px;
+        font-size: 25px;
+    }
+
+    /*FOR HOME*/
+    .header_content_txt {
+        font-size: 45px;
+        bottom: 60%;
+    }
+    .header_content_txt_small {
+        font-size: 18px;
+        bottom: 51%;
+    }
+    .header_content_button button {
+        bottom: 40%;
+        width: 190px;
+        height: 65px;
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+    /*PROJECT*/
+    .head_proj_title{
+        top: 25%;
+        font-size: 65px;
+    }
+    .menu_proj li {
+        font-size: 20px;
+    }
+    .title_slider{
+        font-size: 100px;
+    }
+    .slider_item{
+        width: 500px;
+        height: 420px;
+    }
+    .slider_btn{  
+        width: 50px;
+        height: 50px;
+        top: 53%;
+    }
+
+     /*FOR SERVIES*/
+     .head_serv_title{
+        font-size: 60px;
+        top: 25%;  
+    }
+    .serv_txt_1{
+        font-size: 45px;
+    }
+    .serv_txt_2{
+        font-size: 20px;
+    }
+    .serv_img img{
+        width: 85%;
+    }
+    .serv_title, .serv_title_1{
+        font-size: 80px;
+    }
+    .serv_text_title{
+        font-size: 30px;
+    }
+    .serv_text{
+        font-size: 20px;
+    }
+
+    /*FOR FOOTER*/
+    .info img{
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .jojo {
+        font-size: 30px;
+    }
+    .jojo_txt {
+        font-size: 18px;
+    }
+    .copyr {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:830px){
+        /*FOR HEADER*/
+    .header__top {
+        font-size: 25px;
+    }
+    .menu {
+        margin-left: 60px;
+    }
+    .menu li {
+        margin: 5px;
+        font-size: 20px;
+    }
+
+        /*FOR HOME*/
+    .header_content_txt {
+        font-size: 30px;
+        bottom: 70%;
+    }
+    .header_content_txt_small {
+        font-size: 13px;
+        bottom: 65%;
+    }
+    .header_content_button button {
+        bottom: 55%;
+        width: 160px;
+        height: 55px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .header_content_button button img{
+        max-width: 30px;
+    }
+
+        /*PROJECT*/
+    .head_proj_title{
+        top: 15%;
+        font-size: 45px;
+    }
+    .menu_proj{
+        margin-left: 11.5%;
+    }
+    .menu_proj ul {
+        max-width: 85%;
+    }
+    .menu_proj li {
+        margin: 0 7px;
+        font-size: 15px;
+    }
+    .title_slider{
+        font-size: 50px;
+    }
+    .slider_item{
+        width: 300px;
+        height: 300px;
+    }
+    .slider_btn{  
+        width: 40px;
+        height: 40px;
+        top: 53%;
+    }
+    .slider_btn btn_left img{
+        width: 15px;
+        height: 15px;
+    }
+     /*FOR SERVIES*/
+     .head_serv_title{
+        font-size: 50px;
+        top: 15%;  
+    }
+    .serv_txt_1{
+        font-size: 35px;
+    }
+    .serv_txt_2{
+        font-size: 15px;
+    }
+    .serv_img img{
+        width: 75%;
+    }
+    .serv_title, .serv_title_1{
+        font-size: 65px;
+    }
+    .serv_text_title{
+        font-size: 25px;
+    }
+    .serv_text{
+        font-size: 15px;
+    }
+
+        /*FOR CONTACTS*/
+    .cont_title {
+    font-size: 30px;
+    } 
+    .content_image {
+        max-width: 20%;
+        max-height: 20%;
+    }
+    .form {
+        max-width: 40%;
+    }
+    .form-group {
+        font-size: 25px;  
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="mail"],
+    textarea,
+    .form-button {
+        width: 100%;
+        height: 40px;
+    }
+    .form-button {
+        font-size: 25px;
+        height: 40px;
+    }
+    .map img{
+        max-width: 70%;
+    }
+      
+        /*FOR FOOTER*/
+    .info img{
+        max-width: 85%;
+        max-height: 85%;
+    }
+    .footers img {
+        margin-top: 5%;
+    }
+    .jojo {
+        font-size: 25px;
+        margin-left: 3%;
+    }
+    .jojo img, .header__top img {
+        max-width: 35px;
+        max-height: 35px; 
+    }
+    .jojo_txt {
+        font-size: 15px;
+        margin-left: 3%; 
+    }
+    .footer_icon {
+        margin-left: 3%; 
+        max-width: 150px;
+    }
+    .copyr {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:500px){
+        /*FOR HEADER*/
+    .header__top {
+        font-size: 20px;
+      }
+    .menu {
+        margin-left: 30px;
+    }
+    .menu li {
+        margin: 4px;
+        font-size: 12px;
+    }
+
+           /*FOR HOME*/
+    .header_content_txt {
+        font-size: 25px;
+        bottom: 75%;
+    }
+    .header_content_txt_small {
+        font-size: 10px;
+        bottom: 70%;
+    }
+    .header_content_button button {
+        bottom: 60%;
+        width: 130px;
+        height: 35px;
+        font-size: 10px;
+    }
+    .header_content_button button img{
+        max-width: 10px;
+      }
+
+        /*PROJECT*/
+    .head_proj_title{
+        top: 13%;
+        font-size: 35px;
+    }
+    .menu_proj{
+        margin-left: 10.5%;
+    }
+    .menu_proj ul {
+        max-width: 95%;
+    }
+    .menu_proj li {
+        margin: 0px;
+        font-size: 12px;
+    }
+    .title_slider{
+        font-size: 40px;
+    }
+    .slider_item{
+        width: 200px;
+        height: 200px;
+    }
+    .slider_btn{  
+        width: 30px;
+        height: 30px;
+        top: 43%;
+    }
+    .slider_btn btn_left img{
+        width: 7px;
+        height: 7px;
+    }
+
+     /*FOR SERVIES*/
+     .head_serv_title{
+        font-size: 40px;
+        top: 10%;  
+    }
+    .serv_txt_1{
+        font-size: 25px;
+    }
+    .serv_txt_2{
+        font-size: 10px;
+    }
+    .serv_img img{
+        width: 70%;
+    }
+    .serv_title, .serv_title_1{
+        font-size: 30px;
+    }
+    .serv_text_title{
+        font-size: 18px;
+    }
+    .serv_text{
+        font-size: 10px;
+    }
+
+ /*FOR CONTACTS*/
+    .cont_title {
+        font-size: 20px;
+    } 
+    .content_image {
+        max-width: 30%;
+        max-height: 30%;
+        margin-left: 5%;
+    }
+    .form {
+        max-width: 60%;
+    }
+    .form-group {
+        font-size: 18px;  
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="mail"],
+    textarea,
+    .form-button {
+        width: 100%;
+        height: 30px;
+    }
+    .form-button {
+        font-size: 20px;
+        height: 30px;
+    }
+    .map img{
+        max-width: 80%;
+    }
+
+          /*FOR FOOTER*/
+    .info img{
+        max-width: 75%;
+        max-height: 75%;
+    }
+    .footers img {
+        margin-top: 5%;
+    }
+    .jojo {
+        font-size: 20px;
+    }
+    .jojo img, .header__top img {
+        max-width: 25px;
+        max-height: 25px; 
+    }
+    .jojo_txt {
+        font-size: 12px;
+    }
+    .footer_icon {
+        max-width: 130px;
+    }
+    .copyr {
+        font-size: 12px;
+    }
+}
